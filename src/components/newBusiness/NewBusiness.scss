@@ -1,0 +1,46 @@
+.features{
+    &.dark{
+
+        background-color: #0d084d;
+        color: white;
+
+        .container{
+
+            .item{
+
+                p{
+                    color: white;
+            margin-bottom: 25px;
+        }
+                 h1{
+            color: white;
+        }
+             .title{
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            // margin-bottom: ;
+
+            .icon{
+                color: gray;
+            }
+        }
+        img{
+            width: 90%;
+        }
+        button{
+            background-color: #1dbf73;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 30px;
+            cursor: pointer;
+            border: none;
+            width: max-content;
+        }
+    }
+}
+
+}
+}

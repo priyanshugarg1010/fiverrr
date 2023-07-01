@@ -1,0 +1,91 @@
+.featured{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #013914;
+
+    .container{
+        display: flex;
+        align-items: center;
+        width: 1400px;
+        gap: 20px;
+
+        .left{
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            h1{
+                font-size: 50px;
+                i{
+                    font-weight: 500;
+                }
+            }
+
+            .search{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 5px;
+                overflow: hidden;
+                background-color: white; 
+                width: 80%;
+
+                .searchInputs{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 10px;
+                 .searchIcons{
+                    color: black !important;
+                    padding: 5px;
+                    width: 10px;
+                 }   
+
+                 input{
+                    width: 80vh;
+                    height: 45px;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                 }
+                }
+
+                button{
+                    width: 120px;
+                    height: 50px;
+                    border: none;
+                    background-color: #1dbf73;
+                    cursor: pointer;
+                    color: #fff;
+
+                }
+            }
+
+            .popular{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                span{
+
+                }
+                button{
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .right{
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+    }
+}
