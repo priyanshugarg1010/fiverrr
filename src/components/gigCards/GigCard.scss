@@ -1,0 +1,101 @@
+.gigCard {
+    width: 324px;
+    height: 420px;
+    border: 1px solid rgb(237, 236, 236);
+    border: 1px solid rgb(228, 228, 228);
+    margin-bottom: 20px;
+    border-radius: 5px ;
+    // overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+
+    }
+  
+    .info {
+      padding: 5px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+  
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+  
+        img {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+  
+        span {
+        }
+      }
+  
+      p {
+        color: #111;
+      }
+  
+      .star {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px;
+  
+        .icon{
+
+          height: 18px;
+          width: 18px;
+          color: #ffc108;
+        }
+        
+  
+        span {
+          font-size: 16px;
+          font-weight: bold;
+          color: #ffc108;
+        }
+      }
+    }
+  
+    hr {
+      height: 0;
+      border: 0.5px solid rgb(228, 228, 228);
+    }
+  
+    .details {
+      padding: 5px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      // .icon{
+      //   width: 16px;
+      //   height: 16px;
+      //   cursor: pointer;
+      //   object-fit: cover;
+      // }
+  
+      
+      .price {
+        // display: flex;
+        // flex-direction: row;
+        span {
+          color: #999;
+          font-size: 12px;
+        }
+  
+        h2 {
+          color: #555;
+          font-size: 18px;
+          font-weight: 400;
+          text-align: end;
+        }
+  
+      }
+    }
+  }
