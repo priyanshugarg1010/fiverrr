@@ -1,6 +1,9 @@
 import React from "react";
+import "./Gig.scss";
 import StarOutlinedIcon from "@mui/icons-material/StarOutlined";
 import { Slider } from "infinite-react-carousel";
+import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
+import ThumbDownOffAltOutlinedIcon from "@mui/icons-material/ThumbDownOffAltOutlined";
 
 const Gig = () => {
   return (
@@ -13,19 +16,20 @@ const Gig = () => {
           <h1>i will create AI generated art for you</h1>
           <div className="user">
             <img
+              className="pp"
               src="https://images.pexels.com/photos/8864283/pexels-photo-8864283.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
             />
             <span>Priyanshu Garg</span>
             <div className="stars">
-              <StarOutlinedIcon />
-              <StarOutlinedIcon />
-              <StarOutlinedIcon />
-              <StarOutlinedIcon />
+              <StarOutlinedIcon className="icon" />
+              <StarOutlinedIcon className="icon" />
+              <StarOutlinedIcon className="icon" />
+              <StarOutlinedIcon className="icon" />
               <span>4</span>
             </div>
           </div>
-          <Slider slideToShow={1} arrowsScroll={1}>
+          <Slider slideToShow={1} arrowsScroll={1} className="slider">
             <img
               src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
@@ -74,10 +78,10 @@ const Gig = () => {
               <div className="info">
                 <span>Priyansu Garg</span>
                 <div className="stars">
-                  <StarOutlinedIcon />
-                  <StarOutlinedIcon />
-                  <StarOutlinedIcon />
-                  <StarOutlinedIcon />
+                  <StarOutlinedIcon className="icon" />
+                  <StarOutlinedIcon className="icon" />
+                  <StarOutlinedIcon className="icon" />
+                  <StarOutlinedIcon className="icon" />
                   <span>4</span>
                 </div>
                 <button>Contact Me</button>
@@ -86,8 +90,8 @@ const Gig = () => {
             <div className="box">
               <div className="items">
                 <div className="item">
-                  <span className="title"></span>
-                  <span className="desc"></span>
+                  <span className="title">From</span>
+                  <span className="desc">INR</span>
                 </div>
                 <div className="item">
                   <span className="title">Member since</span>
@@ -114,6 +118,48 @@ const Gig = () => {
               </p>
             </div>
           </div>
+          <div className="reviews">
+            <h2>Reviews</h2>
+            <div className="item">
+              <div className="user">
+                <img
+                  src="https://images.pexels.com/photos/8864283/pexels-photo-8864283.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  alt=""
+                />
+                <div className="info">
+                  <span>Priyanshu Garg</span>
+                  <div className="country">
+                    <img src="./images/flag.png" alt="" />
+                    <span>INDIA</span>
+                  </div>
+                </div>
+              </div>
+              <div className="stars">
+                <StarOutlinedIcon />
+                <StarOutlinedIcon />
+                <StarOutlinedIcon />
+                <StarOutlinedIcon />
+                <span>4</span>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate non vel aliquid excepturi corrupti dicta magni nulla
+                fugiat, laudantium adipisci, harum reprehenderit, qui
+                exercitationem iusto necessitatibus libero! Praesentium eos modi
+                nemo, quam aperiam labore quisquam tempora dolor suscipit iste
+                cum voluptatibus optio consectetur sed atque repellat cumque
+                libero obcaecati! Dolorum?
+              </p>
+            </div>
+            <div className="helpful">
+              <span>Helpful?</span>
+              <ThumbUpOffAltOutlinedIcon />
+              <span>Yes</span>
+              <ThumbDownOffAltOutlinedIcon />
+              <span>No</span>
+            </div>
+          </div>
+          <hr />
         </div>
         <div className="right"></div>
       </div>
