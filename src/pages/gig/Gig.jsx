@@ -4,7 +4,9 @@ import StarOutlinedIcon from "@mui/icons-material/StarOutlined";
 import { Slider } from "infinite-react-carousel";
 import ThumbUpOffAltOutlinedIcon from "@mui/icons-material/ThumbUpOffAltOutlined";
 import ThumbDownOffAltOutlinedIcon from "@mui/icons-material/ThumbDownOffAltOutlined";
-
+import FlipCameraAndroidIcon from "@mui/icons-material/FlipCameraAndroid";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 const Gig = () => {
   return (
     <div className="gig">
@@ -123,23 +125,25 @@ const Gig = () => {
             <div className="item">
               <div className="user">
                 <img
+                  className="pp"
                   src="https://images.pexels.com/photos/8864283/pexels-photo-8864283.jpeg?auto=compress&cs=tinysrgb&w=1600"
                   alt=""
                 />
                 <div className="info">
                   <span>Priyanshu Garg</span>
+                  {/*todo add country flag*/}
                   <div className="country">
                     <img src="./images/flag.png" alt="" />
                     <span>INDIA</span>
                   </div>
                 </div>
-              </div>
-              <div className="stars">
-                <StarOutlinedIcon />
-                <StarOutlinedIcon />
-                <StarOutlinedIcon />
-                <StarOutlinedIcon />
-                <span>4</span>
+                <div className="stars">
+                  <StarOutlinedIcon className="icon" />
+                  <StarOutlinedIcon className="icon" />
+                  <StarOutlinedIcon className="icon" />
+                  <StarOutlinedIcon className="icon" />
+                  <span>4</span>
+                </div>
               </div>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -153,15 +157,55 @@ const Gig = () => {
             </div>
             <div className="helpful">
               <span>Helpful?</span>
-              <ThumbUpOffAltOutlinedIcon />
+              <ThumbUpOffAltOutlinedIcon className="icon" />
               <span>Yes</span>
-              <ThumbDownOffAltOutlinedIcon />
+              <ThumbDownOffAltOutlinedIcon className="icon" />
               <span>No</span>
             </div>
           </div>
           <hr />
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="price">
+            <h3>AI Generated Image</h3>
+            <h2>499</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            repudiandae qui unde corrupti porro eius aliquid consequuntur nobis
+            id reprehenderit.
+          </p>
+          <div className="details">
+            <div className="item">
+              <AccessTimeIcon className="icon" />
+              <span>2 Days</span>
+            </div>
+            <div className="item">
+              <FlipCameraAndroidIcon className="icon" />
+              <span>3 Revisions</span>
+            </div>
+          </div>
+
+          <div className="feature">
+            <div className="item">
+              <CheckCircleOutlineIcon className="icon" />
+              <span>promt writing</span>
+            </div>
+            <div className="item">
+              <CheckCircleOutlineIcon className="icon" />
+              <span>artwork delivery</span>
+            </div>
+            <div className="item">
+              <CheckCircleOutlineIcon className="icon" />
+              <span>image unscaling</span>
+            </div>
+            <div className="item">
+              <CheckCircleOutlineIcon className="icon" />
+              <span>aditional design</span>
+            </div>
+          </div>
+          <button>Continue</button>
+        </div>
       </div>
     </div>
   );

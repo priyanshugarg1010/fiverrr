@@ -7,7 +7,7 @@
     display: flex;
     gap: 50px;
 
-    .left {
+    .left{
       flex: 2;
       display: flex;
       flex-direction: column;
@@ -145,8 +145,8 @@
 
           .items {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-between;
 
             .item {
               width: 300px;
@@ -195,46 +195,45 @@
                 width: 20px;
               }
             }
+            
+            .stars {
+              display: flex;
+              gap: 5px;
+              
+              .icon{
+                color: #ffc108 !important;
+                height: 18px;
+                width: 18px;
+              }
+              span {
+                font-size: 18px;
+                font-weight: bold;
+                color: #ffc108;
+              }
+            }
           }
 
-          .stars {
-            display: flex;
-            gap: 5px;
-
-            img {
-              height: 14px;
-              width: 14px;
-              color: #ffc108;
-            }
-
-            span {
-              font-size: 14px;
-              font-weight: bold;
-              color: #ffc108;
-            }
-          }
-
+        }
           .helpful {
             display: flex;
             align-items: center;
             gap: 10px;
-
-            img {
-              width: 14px;
+            
+            .icon {
+              width: 18px;
             }
           }
-        }
 
+        }
         hr {
           height: 0;
           border: 0.5px solid lightgray;
           margin: 50px 0px;
         }
-      }
     }
 
     .right {
-      flex: 1;
+      flex: 3;
       border: 1px solid lightgray;
       padding: 20px;
       border-radius: 5px;
@@ -276,13 +275,17 @@
           align-items: center;
           gap: 10px;
 
-          img {
+          .icon {
             width: 20px;
           }
         }
       }
 
-      .features{
+      .feature{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
         .item{
           display: flex;
           align-items: center;
@@ -291,8 +294,9 @@
           color: gray;
           margin-bottom: 5px;
 
-          img{
-            width: 14px;
+          .icon{
+            width: 20px;
+            color: rgb(0, 114, 0);
           }
         }
       }
