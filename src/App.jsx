@@ -12,6 +12,8 @@ import MyGigs from "./pages/myGigs/MyGigs";
 import "./app.scss";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 const App = () => {
   const Layout = () => {
     return (
@@ -59,6 +61,14 @@ const App = () => {
         {
           path: "/messages",
           element: <Messages />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
+        },
+        {
+          path: "/register",
+          element: <Register />,
         },
       ],
     },

@@ -1,0 +1,10 @@
+DELETE http://localhost:8800/backend/users/64a793caa67dbff751e57ff1
+
+###
+POST http://localhost:8800/backend/localhost:8800/backend/auth/login
+Content-Type: application/json
+
+{
+    "username": "user 7",
+    "password": "user7@123"
+}
