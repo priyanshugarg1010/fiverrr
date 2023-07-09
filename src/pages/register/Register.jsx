@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import newRequest from "../../utils/newRequest";
-import uploadFile from "../../utils/upload";
+import upload from "../../utils/upload";
 import "./Register.scss";
+import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [file, setFile] = useState(null);
-
   const [user, setUser] = useState({
     username: "",
     email: "",
@@ -18,36 +17,32 @@ function Register() {
   });
 
   const navigate = useNavigate();
-  console.log(user);
+
   const handleChange = (e) => {
     setUser((prev) => {
       return { ...prev, [e.target.name]: e.target.value };
     });
   };
+
   const handleSeller = (e) => {
     setUser((prev) => {
-      return {
-        ...prev,
-        isSeller: e.target.checked,
-      };
+      return { ...prev, isSeller: e.target.checked };
     });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = await uploadFile(file);
 
+    const url = await upload(file);
     try {
-      await newRequest("/auth/register", {
+      await newRequest.post("/auth/register", {
         ...user,
         img: url,
       });
-      // navigate('/')
-    } catch (error) {
-      console.log(error.message);
+      // navigate("/");
+    } catch (err) {
+      console.log(err);
     }
   };
-
   return (
     <div className="register">
       <form onSubmit={handleSubmit}>
